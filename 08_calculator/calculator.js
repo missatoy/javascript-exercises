@@ -20,12 +20,22 @@ const multiply = function(array) {
   return result
 };
 
-const power = function() {
-
+const power = function(a, b) {
+  return (a ** b)
 };
 
-const factorial = function() {
+const factorial = function(num) {
+  let result = num
 
+  if (num === 0) {
+    return 1
+  } else {
+    while (num > 1) {
+      num --
+      result *= num
+    }
+  }
+  return result
 };
 
 // Do not edit below this line
