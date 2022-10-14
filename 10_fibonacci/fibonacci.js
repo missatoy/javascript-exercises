@@ -1,14 +1,16 @@
 const fibonacci = function(num) {
-  let n1 = 0;
-  let n2 = 1;
+  let a = 1;
+  let b = 1;
   let nextNum = 0;
+  let sequence = []
 
-  for (let i = 1; i <= number; i++) {
-    console.log(n1);
-    nextTerm = n1 + n2;
-    n1 = n2;
-    n2 = nextNum;
+  for (let i = 1; i <= num; i++) {
+    nextNum = a + b;
+    sequence.push(a)
+    a = b;
+    b = nextNum
   }
+  return sequence[num - 1]
 };
 
 // Do not edit below this line
