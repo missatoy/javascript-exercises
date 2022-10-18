@@ -1,9 +1,7 @@
 const getTheTitles = function(books) {
-  let bookTitles = []
-  books.forEach(book => {
-    bookTitles.push(book.title)
-  });
-  return bookTitles
+  let array = []
+  books.filter(book => array.push(book.title))
+  return array
 };
 
 // Do not edit below this line
